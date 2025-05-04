@@ -1,7 +1,5 @@
 name: Test Hello Name Action
 
-name: Test Hello Name Action
-
 on: [push]
 
 jobs:
