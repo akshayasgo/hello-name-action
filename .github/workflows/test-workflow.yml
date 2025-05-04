@@ -13,6 +13,6 @@ jobs:
         with:
           node-version: '16.x'
       - name: Run Hello Name Action
-        uses: ./dist # Uses the bundled action in the 'dist' directory
+        uses: ./ # Uses the bundled action in the 'dist' directory
         with:
           name: "Akshay Jain"
