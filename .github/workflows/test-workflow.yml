@@ -1,5 +1,7 @@
 name: Test Hello Name Action
 
+name: Test Hello Name Action
+
 on: [push]
 
 jobs:
@@ -12,6 +14,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '16.x'
+      - name: Install dependencies
+        run: npm install
       - name: Run Hello Name Action
         uses: ./ # Uses the action in the local repository
         with:
