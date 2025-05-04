@@ -12,9 +12,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '16.x'
-      - name: Install dependencies
-        run: npm install
       - name: Run Hello Name Action
-        uses: ./ # Uses the action in the local repository
+        uses: ./dist # Uses the bundled action in the 'dist' directory
         with:
-          name: "GitHub User"
+          name: "Akshay Jain"
